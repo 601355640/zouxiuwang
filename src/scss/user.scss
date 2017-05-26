@@ -1,0 +1,182 @@
+@charset 'utf-8';
+@import "base";
+
+html,body{
+	height:100%;
+}
+.header{
+    height: 46px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background: #a71716;
+    .header_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    	.header_title{
+    	    line-height: 46px;
+    	    flex: 1;
+    	    text-align: center;
+    	    font-size: 18px;
+    	}
+    	.header_btn{
+    	    width: 60px;
+    	    height: 46px;
+    	    line-height: 46px;
+    	    text-align: center;
+    	  	margin-right: 10px;
+    	  	display: flex;
+    	  	align-items: center;
+    	    a{
+    	     color:#fff;
+    	     font-size: 14px; 
+    	     height: 27px;
+    	     width: 50px;
+    	     border-radius: 8px;
+    	     border: 1px solid #8f0b09;
+    	     display: block;
+    	     line-height:25px;
+    	    }
+    	}
+	}
+}
+.content {
+	box-sizing: border-box;
+	padding:76px 15px 0 15px; 
+	height: 100%;
+	background: #f7f7f7;
+	.user-pic {
+		width: 100%;
+		height:83px;
+		dl{
+			overflow: hidden;
+			width: 100%;
+			height:100%;
+			dt {
+				img {
+					float: left;
+					width: 82px;
+					height:83px;
+					border-radius: 12px;
+				}
+			}
+			dd {
+				float: left;
+				margin-left: 16px;
+				height: 83px;
+				display: flex;
+				flex-direction:column;
+				justify-content: space-around;
+				font-size: 18px;
+				color: #232524; 
+				.usermoney span {
+					color: #f20300;
+				}
+			}
+		}
+	}
+	.list {
+		width: 100%;
+		margin-top:43px;
+		border:1px solid #dedede;
+		border-radius: 12px;
+		background: #fff;
+		li {
+			box-sizing: border-box;
+			width: 100%;
+			height:44px;
+			border-bottom:1px solid #dedede;
+			color: #000;
+			font-size: 18px;
+			padding: 0 18px;
+			
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.more {
+					color: #c2c2c2;
+					font-family: '宋体';
+					font-weight: 600;
+				}
+			}
+			
+		}
+		.no-border {
+			border: 0;
+		};
+	}
+	
+
+}	
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 49px;
+	background: #484850;
+	border-top:1px solid #000;
+	
+	ul {
+		width: 100%;
+		height:100%;
+		text-align: center;
+
+		li{
+			position: relative;
+			
+			float: left;
+			width: 20%;
+			border-top:1px solid #636363;
+			color: #fff;
+			line-height: 20px;
+			a {
+				display: block;
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.red-border {
+				display: none;
+				position: absolute;
+				left: 0;
+				top:-2px;
+				width: 100%;
+				height:4px;
+				background: #d71110;
+			}
+			img {
+				margin-top: 5px;
+				width: 24px;
+				height:24px;
+			}
+		}
+		.active {
+			.red-border {
+				display:block;
+			}
+		}
+		.num {
+			position: absolute;
+			right: 15px;
+			top: 3px;
+			width: 14px;
+			height:14px;
+			line-height: 14px;
+			background: #b52121;
+			border-radius: 50%;
+			color: #fff;
+		}
+	}
+
+}

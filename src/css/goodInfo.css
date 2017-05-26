@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, fieldset, legend, img, input, p, table {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+i, em {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑","黑体","宋体",Arial, Helvetica, "sans-serif";
+}
+
+.clear:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+}
+
+header {
+  height: 46px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #a71716;
+}
+
+.header_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  color: #fff;
+}
+
+.header_title {
+  line-height: 46px;
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+}
+
+.header_btn {
+  width: 60px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.header_btn a {
+  color: #fff;
+  font-size: 18px;
+  height: 27px;
+  width: 50px;
+  border-radius: 8px;
+  border: 1px solid #8f0b09;
+  display: block;
+  line-height: 25px;
+  margin-top: 10px;
+  background: url(../imgs/list1_03.jpg) no-repeat center;
+  background-size: 50px 25px;
+}
+
+.header_btn b {
+  font-size: 28px;
+  font-family: "宋体";
+}
+
+.content {
+  overflow: hidden;
+  background: #f3eff0;
+  height: 100%;
+  width: 100%;
+  padding-top: 46px;
+  box-sizing: border-box;
+}
+
+.content .goodsinfo {
+  width: 100%;
+}
+
+.content .goodsinfo img {
+  width: 100%;
+  height: 200px;
+  flex: 0;
+}
+
+.content .goodsinfo .info {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.content .goodsinfo .info p {
+  padding-bottom: 2vw;
+  font-size: 18px;
+  color: #444444;
+}
+
+.content .goodsinfo .info p .yuanjia {
+  color: #b70b55;
+  padding-right: 15px;
+}
+
+.content .checkGoods {
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .checkGoods .checkGoods_ico {
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #656565;
+}
+
+.content .checkGoods .checkGoods_ico img {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+
+.content .checkGoods .checkGoods_txt {
+  height: 50px;
+  width: 100%;
+  flex: 1;
+  line-height: 50px;
+  font-size: 18px;
+  color: #656565;
+}
+
+.content .checkGoods .checkGoods_next {
+  height: 50px;
+  width: 40px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: #656565;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 180vw;
+  margin-left: -40vw;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background: deeppink;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background: none;
+}
+
+.swiper-container {
+  overflow: inherit;
+  position: inherit;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  z-index: 100;
+  width: 80px;
+  height: 25px;
+  background: #bcbcbc;
+  line-height: 25px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.swiper-pagination {
+  position: inherit;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e9e9e9;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background: #484850;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+footer p {
+  width: 100%;
+  background: #b42020;
+  height: 40px;
+  flex: 1;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  margin: 0 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 5px;
+}

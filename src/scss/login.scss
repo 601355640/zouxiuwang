@@ -1,0 +1,108 @@
+@charset 'utf-8';
+@import "base";
+
+html,body{
+	height:100%;
+}
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height:46px;
+	text-align: center;
+	line-height: 46px;
+	color: #fff;
+	font-size:18px; 
+	background: #a90506;
+}
+.content {
+	box-sizing: border-box;
+	padding:61px 15px 0 15px; 
+	height: 100%;
+	background: #f3eff0;
+
+	.txt,.psw {
+		width: 100%;
+		height: 43px;
+		background: #fff;
+		border-radius: 6px;
+		margin-bottom: 2px;
+		input {
+			box-sizing: border-box;
+			border: 0;
+			width: 100%;
+			height:100%;
+			border-radius: 6px;
+			padding-left: 10px;
+			outline: 0;
+			color: #9b9b9b;
+		}
+	}
+	.tishi {
+		height:25px;
+		line-height: 25px;
+		color: #ff0d53;
+	}
+	.show-psw,.remeber-psw {
+		overflow: hidden;
+		width: 100%;
+		height: 22px;
+		padding-top:25px;
+		line-height: 22px;
+		.select {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #676767;
+			border-radius: 3px;
+			margin-right:5px; 
+		}
+		
+		span {
+			margin-right:18px;
+			color:#676767;
+		}
+		em {
+			a{
+				color: #ff0d53;
+			}
+		}
+	}
+	.show-psw {
+		padding: 0;
+	}
+	.remeber-psw,.show-psw {
+		.checked {
+			background: url(../imgs/s.png) no-repeat;
+			background-size:100% 100%; 
+		}
+	}
+	.login-btn,.reg-btn {
+		width: 100%;
+		height: 41px;
+		line-height: 41px;
+		margin-top: 25px;
+		input {
+			border:0;
+			width: 100%;
+			height:100%;
+			color: #fff;
+			font-size: 16px;
+			border: 1px solid #820000;
+			border-radius: 6px;
+			text-align: center;
+			background: #c60808;
+			letter-spacing: 6px;
+			outline: 0;
+		}
+	}
+	.reg-btn {
+		margin-top: 5px;
+		input {
+			background: #404040;
+			border:1px solid #000;
+			
+		}
+	}
+}	

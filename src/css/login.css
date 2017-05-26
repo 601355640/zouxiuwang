@@ -1,0 +1,158 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, fieldset, legend, img, input, p, table {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+i, em {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑","黑体","宋体",Arial, Helvetica, "sans-serif";
+}
+
+.clear:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  font-size: 18px;
+  background: #a90506;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 61px 15px 0 15px;
+  height: 100%;
+  background: #f3eff0;
+}
+
+.content .txt, .content .psw {
+  width: 100%;
+  height: 43px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 2px;
+}
+
+.content .txt input, .content .psw input {
+  box-sizing: border-box;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  padding-left: 10px;
+  outline: 0;
+  color: #9b9b9b;
+}
+
+.content .tishi {
+  height: 25px;
+  line-height: 25px;
+  color: #ff0d53;
+}
+
+.content .show-psw, .content .remeber-psw {
+  overflow: hidden;
+  width: 100%;
+  height: 22px;
+  padding-top: 25px;
+  line-height: 22px;
+}
+
+.content .show-psw .select, .content .remeber-psw .select {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #676767;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.content .show-psw span, .content .remeber-psw span {
+  margin-right: 18px;
+  color: #676767;
+}
+
+.content .show-psw em a, .content .remeber-psw em a {
+  color: #ff0d53;
+}
+
+.content .show-psw {
+  padding: 0;
+}
+
+.content .remeber-psw .checked, .content .show-psw .checked {
+  background: url(../imgs/s.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.content .login-btn, .content .reg-btn {
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  margin-top: 25px;
+}
+
+.content .login-btn input, .content .reg-btn input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #820000;
+  border-radius: 6px;
+  text-align: center;
+  background: #c60808;
+  letter-spacing: 6px;
+  outline: 0;
+}
+
+.content .reg-btn {
+  margin-top: 5px;
+}
+
+.content .reg-btn input {
+  background: #404040;
+  border: 1px solid #000;
+}
